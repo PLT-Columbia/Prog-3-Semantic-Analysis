@@ -82,8 +82,10 @@ In this example, at line 3, the value of variable `i` is changed, but because th
 
 Please follow these steps for submission:
 
-1. Commit your code.
-2. Push the code to the master branch.
+1. Copy the completed `ClangHW3.cpp` file from your `$LLVM_HOME/clang/tools/clang-hw3/` directory to this projects `src` folder.
+2. Copy the `clang-hw3` executable from your `$LLVM_HOME/build/bin directory` to this project's `outputs` directory.
+3. Commit your code.
+4. Push the code to the master branch.
 
 
 ## Piazza
