@@ -26,6 +26,8 @@ From this assignment:
 
 ## Assignment
 
+In Programming Assignment 2, you began to analyze an AST based on the Clang compiler and had the opportunity to perform syntactic analysis (identifying recursive functions and reformatting functions). As you learned in class, the next and last front-end phase of compilation is semantic analysis, which deals with the scoping and typing of code. In this assignment, you will be able to dig a level deeper into compilation by getting your feet wet with the scoping aspect of semantic analysis.
+
 According to `C` language specifications, it is perfectly legal to redefine a variable with the same name in an inner scope. For example:
 ```c
 1. void foo() {
