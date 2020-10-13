@@ -75,9 +75,9 @@ Here are a couple of things to keep in mind:
 ```
 In this example, at line 3, the value of variable `i` is changed, but because the variable is still the same, this is not a redefinition. A variable will be considered redefined when another variable with the same name (same or different data types) is re-declared in an inner scope.
 
-* [`VisitFunctionDecl`](src/ClangHW3.cpp#L116) calls the function [`analyzeRedefinition`](src/ClangHW3.cpp#L78). Inside `analyzeRedefinition`, if you encounter a variable that is redefined, you should call the helper function [`printVariableRedeclarationInformation`](src/ClangHW3.cpp#L24) with the variable name, the line number where it was initially defined, and the line number where it is being redefined.
+* [`VisitFunctionDecl`](src/ClangHW3.cpp#69) calls the function [`analyzeRedefinition`](src/ClangHW3.cpp#L78). Inside [`analyzeRedefinition`](src/ClangHW3.cpp#58), if you encounter a variable that is redefined, you should call the helper function [`printVariableRedeclarationInformation`](src/ClangHW3.cpp#L24) with the variable name, the line number where it was initially defined, and the line number where it is being redefined.
 
-Your task is to implement the `analyzeRedefinition` function, using the hints in the TODO comment as a guide.
+Your task is to implement the [`analyzeRedefinition`](src/ClangHW3.cpp#58) function, using the hints in the TODO comment as a guide.
 
 
 ## Submission
