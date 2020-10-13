@@ -40,7 +40,7 @@ Variable `j` is redefined in line 4, which was already defined in an outer scope
 
 In the above example, we want to warn the developer as follows: 
 ```c
-Redefining variable: "j" at line 4, which is initially defined at line 2
+Redefining variable "j" at line 4, which is initially defined at line 2
 ```
 In order to that, we need to implement a policy (let us call it **Variable Redefinition Warning Policy**) that checks the developer-written code and warns her if there is a policy violation.
 
