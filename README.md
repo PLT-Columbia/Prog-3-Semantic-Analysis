@@ -40,7 +40,7 @@ Variable `j` is redefined in line 4, which was already defined in an outer scope
 
 In the above example, we want to warn the developer as follows: 
 ```c
-Redefining variable : "j" at line 4 which is initially defined at line 2
+Redefining variable "j" at line 4, which is initially defined at line 2
 ```
 In order to that, we need to implement a policy (let us call it **Variable Redefinition Warning Policy**) that checks the developer-written code and warns her if there is a policy violation.
 
@@ -75,7 +75,7 @@ Here are a couple of things to keep in mind:
 ```
 In this example, at line 3, the value of variable `i` is changed, but because the variable is still the same, this is not a redefinition. A variable will be considered redefined when another variable with the same name (same or different data types) is re-declared in an inner scope.
 
-* [`VisitFunctionDecl`](src/ClangHW3.cpp#L116) calls the function [`analyzeRedefinition`](src/ClangHW3.cpp#L69). Inside `analyzeRedifinition`, if you encounter a variable that is redefined, you should call the helper function [`printVarReDeclarationInformation`](src/ClangHW3.cpp#L28) with the variable name, the line number where it was initially defined, and the line number where it is being redefined.
+* [`VisitFunctionDecl`](src/ClangHW3.cpp#L116) calls the function [`analyzeRedefinition`](src/ClangHW3.cpp#L69). Inside `analyzeRedifinition`, if you encounter a variable that is redefined, you should call the helper function [`printVariableRedeclarationInformation`](src/ClangHW3.cpp#L28) with the variable name, the line number where it was initially defined, and the line number where it is being redefined.
 
 
 ## Submission
