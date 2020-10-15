@@ -83,7 +83,7 @@ Your task is to implement the [`analyzeRedefinition`](src/ClangHW3.cpp#L58) func
 
 ### Steps
 1. Create a folder named `clang-hw3` under `$LLVM_HOME/clang/tools`.
-2. Copy the [ClangHW3.cpp](src/ClangHw3.cpp), [CMakeLists.txt](src/CMakeLists.txt), [HW3Util.h](src/HW3Util.h), and [HW3Util.cpp](src/HW3Util.cpp) files into `$LLVM_HOME/clang/tools/clang-hw3`.
+2. Copy the [ClangHW3.cpp](src/ClangHW3.cpp), [CMakeLists.txt](src/CMakeLists.txt), [HW3Util.h](src/HW3Util.h), and [HW3Util.cpp](src/HW3Util.cpp) files into `$LLVM_HOME/clang/tools/clang-hw3`.
 3. Edit the `$LLVM_HOME/clang/tools/CMakeLists.txt` file, and add this line: `add_clang_subdirectory(clang-hw3)`. 
 4. Now, go to `$LLVM_HOME/build`, and run `make`. When the build has successfully finished, it will generate a binary file named `clang-hw3` in `$LLVM_HOME/build/bin`.
 
