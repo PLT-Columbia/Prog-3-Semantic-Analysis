@@ -38,7 +38,7 @@ According to `C` language specifications, it is perfectly legal to redefine a va
 6.     }
 7. }
 ```
-Variable `j` is redefined in line 4, which was already defined in an outer scope (line 2). While such a redefinition is legal, there is a high chance that it is a developer mistake, and we need to build a tool to warn her.
+Variable `j` is redefined in line 4, which was already defined in an outer scope (line 2). While such a redefinition is legal, there is a high chance that it is a developer mistake, and we need to build a tool to warn them.
 
 In the above example, we want to warn the developer as follows: 
 ```c
@@ -52,12 +52,12 @@ As another example, note that the following case, however, **does not** have any
  2.     int r = m2 % n2;
  3.     if (r != 0) {
  4.         int k4 = 0;
- 5.  	    return gcd_recursive(n2,r);
+ 5.  	      return gcd_recursive(n2,r);
  6.     }
  7.     else {
- 8.  	    int k4 = n2;
+ 8.  	      int k4 = n2;
  9.         return k4;
-10.  	}
+10.  	  }
 11.  }
 ```
 Even though the `k4` variable is defined in line 4 and again in line 8, the earlier definition (at line 4) is not visible at line 8, *i.e.*, these variables are in different scopes.
