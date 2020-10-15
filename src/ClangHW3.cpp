@@ -6,6 +6,7 @@
 #include "clang/StaticAnalyzer/Frontend/FrontendActions.h"
 #include "clang/Tooling/CommonOptionsParser.h"
 #include "clang/Tooling/Tooling.h"
+#include "HW3Util.h"
 #include <iostream>
 
 #include <stack>
@@ -18,16 +19,6 @@ using namespace llvm;
 
 static cl::OptionCategory FindFunctionCategory("");
 
-/*
- * This helper function prints out the previous declaration of a variable.
- */
-void printVariableRedeclarationInformation(const std::string &varName,
-                                           int currentDefLineNo,
-                                           int initialDefLineNo) {
-  std::cout << "Redefining variable \"" << varName << "\" at line "
-            << currentDefLineNo << ", which is initially defined at line "
-            << initialDefLineNo << std::endl;
-}
 
 class FunctionVisitor : public RecursiveASTVisitor<FunctionVisitor> {
 public:
