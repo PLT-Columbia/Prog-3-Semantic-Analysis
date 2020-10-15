@@ -3,16 +3,13 @@
 
 #include "HW3Util.h"
 
-void printCallExprReformatOutput(int lineNo, const std::string& originalSource,
-                                 const std::string& formattedSource){
-  std::cout << "==================================================\n";
-  std::cout << "Function call found at line " << lineNo << "\n";
-  std::cout << "Original Source\n";
-  std::cout << "---------------------------------------------------\n";
-  std::cout << originalSource << "\n";
-  std::cout << "---------------------------------------------------\n";
-  std::cout << "Formatted Source\n";
-  std::cout << "---------------------------------------------------\n";
-  std::cout << formattedSource << "\n";
-  std::cout << "==================================================\n";
+/*
+ * This helper function prints out the previous declaration of a variable.
+ */
+void printVariableRedeclarationInformation(const std::string &varName,
+                                           int currentDefLineNo,
+                                           int initialDefLineNo) {
+  std::cout << "Redefining variable \"" << varName << "\" at line "
+            << currentDefLineNo << ", which is initially defined at line "
+            << initialDefLineNo << std::endl;
 }
