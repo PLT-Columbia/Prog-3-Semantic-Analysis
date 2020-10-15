@@ -3,7 +3,11 @@
 #ifndef LLVM_PRINTING_H
 #define LLVM_PRINTING_H
 
-void printCallExprReformatOutput(int lineNo, const std::string& originalSource,
-                                 const std::string& formattedSource);
+/*
+ * This helper function prints out the previous declaration of a variable.
+ */
+void printVariableRedeclarationInformation(const std::string &varName,
+                                           int currentDefLineNo,
+                                           int initialDefLineNo);
 
 #endif
