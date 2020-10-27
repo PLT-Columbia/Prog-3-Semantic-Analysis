@@ -11,7 +11,7 @@ Instructor: Prof. Baishakhi Ray
 
 ## Logistics
 * **Announcement Date:** Wednesday, October 14, 2020
-* **Due Date:** Wednesday, October 28, 2020 by 11:59 PM. **No extensions!**
+* **Due Date:** Saturday, October 31, 2020 by 11:59 PM. **No extensions!**
 * **Total Points:** 70
 
 ## Grading Breakdown
